@@ -1,0 +1,45 @@
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating label {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background: url('http://www.iconsplace.com/icons/preview/black/rating-star-256.png');
+    background-size: 18px 18px;
+}
+
+.rating label:hover:before {
+    background: url('http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-rating-icon.png');
+    background-size: 18px 18px;
+}
+
+.rating label:hover ~ label:before {
+    background: url('http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-rating-icon.png');
+    background-size: 18px 18px;
+}
+
+.rating input:checked + label:before {
+    background: url('http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-rating-icon.png');
+    background-size: 18px 18px;
+}
+
+.rating input:checked ~ label:before {
+    background: url('http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-rating-icon.png');
+    background-size: 18px 18px;
+}
