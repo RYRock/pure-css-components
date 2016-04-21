@@ -1,0 +1,36 @@
+img {
+  /* height: auto; */
+  height: 200px;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 200px;
+  height: 200px;
+  transition: max-width 1s;
+  margin-top: 20px;
+}
+
+.wrapper.collapsed {
+  max-width: 0px;
+  height: 200px;
+}
+
+.toggleBtn {
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  border: none;
+  background-color: gray;
+  color: #111;
+}
+
+.toggleBtn:hover {
+  background-color: lightgray;
+}
+
+footer {
+  margin-top: 5vh;
+  padding-top: 20px;
+}
